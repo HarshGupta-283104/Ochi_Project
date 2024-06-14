@@ -42,7 +42,7 @@ function About() {
                     </span>
               </div>
               <div className="image mt-6 rounded-xl mr-12 overflow-hidden">
-                    <img src="./images/portfolio.jpg" alt="image" />
+                    <img src="./Images/portfolio.jpg" alt="image" />
               </div>
         </div>
       </div>
