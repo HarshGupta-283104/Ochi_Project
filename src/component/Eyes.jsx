@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BgImage from '../Images/Bg-image.jpg'
 
 function Eyes() {
   const [rotate, setRotate] = useState(180);
@@ -10,10 +11,10 @@ function Eyes() {
       const deltaX = mouseX - window.innerWidth / 2;
       const deltaY = mouseY - window.innerHeight / 2;
       const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-      setRotate(angle -180);
+      setRotate(angle - 180);
     };
 
-window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -21,36 +22,45 @@ window.addEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
-    <>
-      <div className='eyes w-full h-screen text-white overflow-hidden'>
-        <div data-scroll data-scroll-section data-scroll-speed='-0.4' className='w-full h-full bg-[url("./images/Bg-image.jpg")] bg-cover bg-center'>
-          <div data-scroll-section data-scroll-speed='-0.7' className='relative flex gap-12 w-1/3 top-1/4 left-1/2 transform -translate-y-[50%] -translate-x-[50%]'>
-            <div className='w-[15vw] h-[15vw] rounded-full flex items-center justify-center bg-zinc-100'>
-              <div className='w-2/3 h-2/3 bg-gray-900 rounded-full flex items-center justify-center'>
-                <div
-                  className='line w-full h-fit'
-                  style={{ transform: `rotate(${rotate}deg)` }}
-                >
-                  <div className='w-6 h-6 bg-zinc-100 rounded-full relative'></div>
-                </div>
+    <div className="eyes w-full h-screen text-white overflow-hidden">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-0.4"
+        className="w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: `url(${BgImage})` }} // Use the imported image
+      >
+        <div
+          data-scroll-section
+          data-scroll-speed="-0.7"
+          className="relative flex gap-12 w-1/3 top-1/4 left-1/2 transform -translate-y-[50%] -translate-x-[50%]"
+        >
+          <div className="w-[15vw] h-[15vw] rounded-full flex items-center justify-center bg-zinc-100">
+            <div className="w-2/3 h-2/3 bg-gray-900 rounded-full flex items-center justify-center">
+              <div
+                className="line w-full h-fit"
+                style={{ transform: `rotate(${rotate}deg)` }}
+              >
+                <div className="w-6 h-6 bg-zinc-100 rounded-full relative"></div>
               </div>
             </div>
-            <div className='w-[15vw] h-[15vw] rounded-full flex items-center justify-center bg-zinc-100'>
-              <div className='w-2/3 h-2/3 bg-gray-900 rounded-full flex items-center justify-center'>
-                <div
-                  className='line w-full h-fit'
-                  style={{ transform: `rotate(${rotate}deg)` }}
-                >
-                  <div className='w-6 h-6 bg-zinc-100 rounded-full relative'></div>
-                </div>
+          </div>
+          <div className="w-[15vw] h-[15vw] rounded-full flex items-center justify-center bg-zinc-100">
+            <div className="w-2/3 h-2/3 bg-gray-900 rounded-full flex items-center justify-center">
+              <div
+                className="line w-full h-fit"
+                style={{ transform: `rotate(${rotate}deg)` }}
+              >
+                <div className="w-6 h-6 bg-zinc-100 rounded-full relative"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Eyes;
 
 

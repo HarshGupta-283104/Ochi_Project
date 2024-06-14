@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import { IoIosArrowRoundUp } from "react-icons/io";
+import Portfolio from '../Images/portfolio.jpg'
 function About() {
   return (
     <>
@@ -42,7 +43,7 @@ function About() {
                     </span>
               </div>
               <div className="image mt-6 rounded-xl mr-12 overflow-hidden">
-                    <img src="./Images/portfolio.jpg" alt="image" />
+                    <img src={Portfolio} alt="image" />
               </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ function Feauture() {
                             {"VISE".split('').map((item, index)=><span className='span2 block' >{item}</span>)}
                         </h1>
                 <div className="card w-full h-full  rounded-3xl overflow-hidden bg-green-500">
-                            <img src="./images/card2.jpg" alt="image" className='w-full h-full'/>
+                            <img src="../Images/card2.jpg" alt="image" className='w-full h-full'/>
                         </div>
                 </div>
             </div>  
