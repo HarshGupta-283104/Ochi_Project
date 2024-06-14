@@ -6,7 +6,7 @@ function Landing() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed='-.9' className="Landing_page w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-36 px-20">
-        {['We Create', 'Eye ', 'Presentation'].map((items, index) => (
+        {['We Create', 'Eye Opening', 'Presentation'].map((items, index) => (
           <div key={index} className="masker flex">
             {index === 1 && (<motion.div initial={{width:0}} animate={{width: "8vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1}} className="w-[8vw] h-[vh] mr-3 rounded-md overflow-hidden relative  top-[1vw]"><img src="./images/Ochi.jpg" alt="images" /></motion.div>)}
             <div className="w-fit flex items-center">
