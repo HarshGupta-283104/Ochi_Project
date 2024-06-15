@@ -10,7 +10,6 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Footer from './component/Footer';
 
 
-
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
@@ -29,4 +28,3 @@ function App() {
 }
 
 export default App
- 

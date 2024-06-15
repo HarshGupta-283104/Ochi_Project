@@ -32,7 +32,7 @@ function Eyes() {
       >
         <div
           data-scroll-section
-          data-scroll-speed="-0.7"
+          data-scroll-speed="0.7"
           className="relative flex gap-12 w-1/3 top-1/4 left-1/2 transform -translate-y-[50%] -translate-x-[50%]"
         >
           <div className="w-[15vw] h-[15vw] rounded-full flex items-center justify-center bg-zinc-100">
