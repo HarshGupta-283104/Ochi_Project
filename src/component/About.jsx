@@ -4,7 +4,7 @@ import { IoIosArrowRoundUp } from "react-icons/io";
 import Portfolio from '../Images/portfolio.jpg'
 function About() {
   return (
-    <>
+    
       <div data-scroll data-scroll-selection data-scroll-speed='-0.1' className="w-full py-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black">
         <h1 className='font-["Neue_Montreal"] text-6xl p-20 leading-14'>
           Ochi is a strategic partner for fast-grow­ing tech businesses that need to raise funds, sell product, explain complex ideas, and hire great people.
@@ -47,7 +47,7 @@ function About() {
               </div>
         </div>
       </div>
-    </>
+    
   );
 }
 

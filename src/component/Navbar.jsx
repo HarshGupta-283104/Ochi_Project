@@ -9,6 +9,8 @@ function Navbar() {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      console.log(`Current scroll position: ${currentScrollPos}, Previous scroll position: ${prevScrollPos}`);
+      
       setPrevScrollPos(currentScrollPos);
     };
 
