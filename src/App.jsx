@@ -13,7 +13,7 @@ import Footer from './component/Footer';
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <>
+    
      <div className='w-full min-h-screen bg-zinc-900 text-white '>
       <Navbar/>
       <Landing/>
@@ -23,7 +23,7 @@ function App() {
       <Feauture/>
       <Footer/>
      </div>
-    </>
+    
   )
 }
 
